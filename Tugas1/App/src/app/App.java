@@ -13,8 +13,6 @@ public class App {
         Card a1 = new Aphelios();
         a1.card();
 
-        // nightfall n1 = new aphelios();
-        // System.out.println(n1.nightfallStatus());
 
         Card l1 = new Leona();
         l1.card();
