@@ -3,9 +3,10 @@ public class cardStatus {
     String name;
     public static void cards(String name, int manaCost, int power, String status[]) {
         try {
-            String header = "                   ============               \n              =====            =====          \n        ======                      ======    ";
+            String header = "    +--------------============--------------+\n    |         =====            =====         |\n    |   ======                      ======   |";
             String o4a = "    +===";
             String o4b ="===+"; // 34 space
+            String statusBreak = "    |=                                      =|";
             String fullSpace = "    |========================================|";
             String imgPlace = "    |=====                              =====|";
             String o5a = "    |=  ";
@@ -102,17 +103,37 @@ public class cardStatus {
             for (int i = 0; i < 5; i++) {
                 cardS += imgPlace + "\n";
             }
-            cardS += fullSpace + "\n" + fullSpace + "\n";
+            cardS += fullSpace + "\n" + statusBreak + "\n";
             for (int i = 0; i < temp; i++) {
                 cardS += descp[i] + "\n";
             }
-            cardS += fullSpace + "\n" + headerPoint + "\n" + costCard + "\n" + headerPoint + "\n" + fullSpace;
+            cardS += statusBreak + "\n" + fullSpace + "\n" + headerPoint + "\n" + costCard + "\n" + headerPoint + "\n" + fullSpace;
 
 
 
 
 
             System.out.println(cardS);
+            header = null;
+            o4a = null;
+            o4b = null;
+            fullSpace = null;
+            imgPlace = null;
+            o5a = null;
+            o5b = null;
+            headerPoint = null;
+            o6a = null;
+            o6b = null;
+            o6c = null;
+            nameCard = null;
+            manaCard = null;
+            powerCard = null;
+            costCard = null;
+            descp = null;
+            des = null;
+            cardS = null;
+            statusBreak = null;
+
 
         } catch (Exception e) {
             System.out.println("Error: " + e);
