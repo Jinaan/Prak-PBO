@@ -114,25 +114,6 @@ public class cardStatus {
 
 
             System.out.println(cardS);
-            header = null;
-            o4a = null;
-            o4b = null;
-            fullSpace = null;
-            imgPlace = null;
-            o5a = null;
-            o5b = null;
-            headerPoint = null;
-            o6a = null;
-            o6b = null;
-            o6c = null;
-            nameCard = null;
-            manaCard = null;
-            powerCard = null;
-            costCard = null;
-            descp = null;
-            des = null;
-            cardS = null;
-            statusBreak = null;
 
 
         } catch (Exception e) {
